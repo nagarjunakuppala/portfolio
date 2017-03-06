@@ -1,0 +1,500 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+
+.mySlides {
+display:none
+ background: no-repeat center center;
+text-align: center;}
+
+.project_slides {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+text-align: center;
+  background: no-repeat center center;
+}
+
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+@media only screen and (max-width: 50%) {
+  .prev, .next,.text {font-size: 11px}
+}
+.fade {
+  -webkit-animation-name: fade;
+//  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  //animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.active {
+  background-color: #717171;
+}
+
+
+.user {
+  display: inline-block;
+  width: 170px;
+  height: 180px;
+  border-radius: 50%;
+  background-repeat: no-repeat center center;
+  background-position: center center;
+  background-size: cover;
+  border: 3px solid ;
+
+}
+
+.center-align {
+	text-align: center;
+	top-paddng:60px;	
+}
+
+.top-buffer { margin-top:20px;text-align: center; }
+.center-align-text {
+	text-align: center;
+	color: #666;
+}
+.right-align-text {
+	text-align: right;
+}
+.left-align{
+ 	text-align: left;
+}
+.aboutMe {
+width:450px;
+margin-left:200px;
+position: relative;
+color:#666;
+}
+
+.iconLabel{
+    padding:5px;
+    font-family: 'Dosis',sans-serif;
+    font-weight: 300;
+color:#666;
+}
+.mail {
+    color:#666;
+    font-family: 'Dosis',sans-serif;
+}
+
+.mail a:hover {
+    color: #3cf;
+    text-decoration: none;
+}
+a:focus, a:hover {
+    color: blue;
+    text-decoration:none; 
+}
+#resume {
+    margin-top: 20px;
+    border: 1px dotted blue;
+    margin-bottom: 20px;
+   color:#666;
+}
+/* 
+#resume{
+  margin-top: 40px;
+  border: 1px dotted #2b2b2b;
+}
+ */
+#resume,#resume a {
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+#resume a{
+    text-decoration: none;
+color:#666;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+#resume:before,#resume:after,#resume a:before,#resume a:after{
+  content: '';
+  position: absolute;
+   background: #3cf;
+}
+#resume:before,#resume:after{
+  width: 0;
+  height:2px;
+}
+#resume:before{
+  top:-1px;
+  left:-1px;
+}
+#resume:after{
+  bottom: -1px;
+  right:-1px;
+}
+#resume a:before,#resume a:after{
+  width:2px;
+  height:0;
+}
+#resume a:before{
+  left:-1px;
+  bottom:-1px;
+}
+#resume a:after{
+  right:-1px;
+  top:-1px;
+}
+
+#resume:hover:before,#resume:hover:after{
+  animation: zoop-horizontal .3s linear;
+    animation-fill-mode: forwards;
+}
+#resume:hover a:before,#resume:hover a:after{
+  animation: zoop-vertical .1s linear;
+  animation-fill-mode: forwards;
+}
+#resume:hover a:after{
+  animation-delay: .3s;
+
+
+}
+#resume:hover:after{
+  animation-delay: .4s;
+
+}
+#resume:hover a:before{
+  animation-delay: .7s;
+
+}
+
+@keyframes zoop-horizontal{
+  0%{width: 0px;}
+  100%{width: 300px;}
+}
+@keyframes zoop-vertical{
+  0%{height: 0px;}
+  100%{height: 60px;}
+}
+
+
+.resume:hover {
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+#resume a {
+    text-decoration: none;
+    color: #2b2b2b;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+#resume,#resume a {
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    color: blue;
+}
+
+.icons{
+    padding-bottom: 20px;
+}
+
+/* css for social icons */
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: transparent;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+
+/* footer social icons */
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.social-network a.icoFacebook:hover {
+    background-color: #fff;
+}
+
+.icoHome{  
+   font-size: 50px;
+   position: relative;
+   color: #fff;
+}
+.icoHome:hover{  
+   color: #3cf;
+}
+
+.social-network a.icoTwitter:hover {
+    background-color: #fff;
+}
+
+.social-network a.icoGoogle:hover {
+    background-color: #fff;
+}
+
+.social-network a.icoGithub:hover {
+    background-color: #fff;
+}
+
+.social-network a.icoLinkedin:hover {
+    background-color: #fff;
+}
+
+.social-network a.icoFacebook:hover i,.social-network a.icoTwitter:hover i,.social-network a.icoGoogle:hover i,.social-network a.icoLinkedin:hover i,.social-netwrok a.icoGithub:hover i {
+    color: #3cf;
+}
+
+a.socialIcon:hover,.socialHoverClass {
+    color: #fff;
+}
+
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.social-circle li i {
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+}
+
+.social-circle li a:hover i,.triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    -ms-transition: all .2s;
+    transition: all .2s;
+}
+
+.social-circle i {
+    color: #3cf;
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -o-transition: all .8s;
+    -ms-transition: all .8s;
+    transition: all .8s;
+}
+
+.intro {
+  position: relative;
+  padding: 30px;
+  padding-left: 190px;
+  font-size: 16px;
+  color: #666;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  left: 30px;
+display: inline-block;
+background-size: cover;
+  border: 3px solid ;
+}
+
+.contact-user {
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-repeat: no-repeat left left;
+  background-position: center center;
+  background-size: cover;
+  border: 3px solid ;
+position: relative;
+}
+
+
+.section {
+    padding: 30px;
+  }
+.education-section .item {
+  margin-bottom: 45px;
+}
+ .item-inner {
+  padding: 0 30px;
+}
+.item-inner .degree {
+  font-size: 18px;
+  color: #00BCD4;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+.item-inner .course {
+  font-size: 15px;
+  color: #00BCD4;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+ .education-body {
+  font-weight: 500;
+  margin-bottom: 0px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.item-inner .time {
+  color: #8a8a8a;
+  margin-bottom: 15px;
+}
+.item-inner .desc {
+  color: #666;
+}
+
+.time {
+  color: #8a8a8a;
+  margin-bottom: 15px;
+}
+
+.course {
+  font-size: 15px;
+  color: #00BCD4;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+.degree {
+  font-size: 18px;
+  color: #00BCD4;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+#content .tab-content {
+  color : #666;
+  //background-color: white;
+  padding : 5px 0px;
+}
+
+#content .nav-pills > li > a {
+  border-radius: 15px 4px 25px 0 ;
+}
+
+/* Progress Bar */
+.progress {
+  position: relative;
+  height: 18px;
+  display: block;
+  width: 100%;
+  background-color: #3cf;
+  border-radius: 2px;
+  background-clip: padding-box;
+  margin: 0.5rem 0 1rem 0;
+  overflow: hidden; }
+  .progress .determinate {
+    position: absolute;
+    background-color: inherit;
+    top: 0;
+    bottom: 0;
+    background-color: #26a69a;
+    transition: width .3s linear; }
+
+
+#rcorners {
+    border-radius: 25px;
+    border: 1px solid #666;
+   -webkit-box-shadow:0px 2px 2px #666;
+   -moz-box-shadow:2px 2px 2px #666;
+    box-shadow:0px 2px 2px #666; 
+}
+.skill-tag {
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  padding: 6px 30px;
+  display: inline-block;
+  margin-right: 10px;
+  border: 1px solid #f5f5f5;
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
