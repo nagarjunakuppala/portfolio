@@ -498,3 +498,9 @@ position: relative;
   margin-bottom: 15px;
   font-size: 16px;
 }
+.source .name {
+  font-size: 16px;
+}
+ .source .position {
+  color: #8a8a8a;
+}
