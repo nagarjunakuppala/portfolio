@@ -103,7 +103,7 @@ text-align: center;
 	top-paddng:60px;	
 }
 
-.top-buffer { margin-top:20px;text-align: center; }
+.top-buffer { margin-top:20px; }
 .center-align-text {
 	text-align: center;
 	color: #666;
@@ -461,12 +461,13 @@ position: relative;
 
 /* Progress Bar */
 .progress {
+  border-radius: 25px;
   position: relative;
-  height: 18px;
+  height: 16px;
   display: block;
   width: 100%;
-  background-color: #3cf;
-  border-radius: 2px;
+  background-color: rgba(41, 182, 246, 0.34) !important;
+  
   background-clip: padding-box;
   margin: 0.5rem 0 1rem 0;
   overflow: hidden; }
@@ -475,7 +476,7 @@ position: relative;
     background-color: inherit;
     top: 0;
     bottom: 0;
-    background-color: #26a69a;
+    background-color: #29b6f6 !important;
     transition: width .3s linear; }
 
 
@@ -503,4 +504,121 @@ position: relative;
 }
  .source .position {
   color: #8a8a8a;
+}
+
+.timeline {
+  border-left: 3px solid #00BCD4;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  position: relative;
+  padding: 0 30px;
+  margin-left: 280px;
+}
+.timeline .item {
+  position: relative;
+  margin-bottom: 45px;
+}
+.timeline .item:last-child {
+  margin-bottom: 0;
+}
+.timeline .item:before {
+  content: "";
+  position: absolute;
+  left: -43px;
+  top: 0;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #fff;
+  border: 3px solid #00BCD4;
+}
+.timeline .item:after {
+  content: "";
+  position: absolute;
+  left: -37px;
+  top: 6px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #00BCD4;
+  z-index: 10;
+}
+.timeline .work-place {
+  position: relative;
+}
+.timeline .location {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  color: #8a8a8a;
+}
+.timeline .location .fa {
+  margin-right: 5px;
+}
+.timeline .place {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 300;
+}
+.timeline .job-meta {
+  position: absolute;
+  left: -280px;
+  top: 0;
+}
+.timeline .job-meta .title {
+  font-size: 18px;
+  color: #00BCD4;
+}
+.timeline .job-meta .time {
+  color: #8a8a8a;
+}
+.timeline .job-desc {
+  color: #666;
+}
+
+
+a:link {
+    color:white;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+/* selected link */
+a:active {
+    color:white;
+    font-weight: bold;
+}
+a:hover#logo-container{
+  font-weight: normal
+}
+
+ .resume {
+  font-size: 18px;
+  color: #00BCD4;
 }
